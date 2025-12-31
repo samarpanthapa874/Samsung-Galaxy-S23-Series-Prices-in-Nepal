@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Price Tracker Nepal</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1428A0', // Samsung blue
+              secondary: '#000000',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #1428A0 0%, #000000 100%);
+      }
+      .phone-shadow {
+        box-shadow: 0 25px 50px -12px rgba(20, 40, 160, 0.25);
+      }
+      .hero-pattern {
+        background-image: radial-gradient(#1428A0 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="gradient-bg text-white py-4 px-6 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i data-feather="smartphone" class="text-primary-100"></i>
+        <span class="text-xl font-bold">GalaxyTracker</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#" class="hover:text-primary-200 font-medium">Home</a>
+        <a href="#" class="hover:text-primary-200 font-medium">Latest Prices</a>
+        <a href="#" class="hover:text-primary-200 font-medium">Comparison</a>
+        <a href="#" class="hover:text-primary-200 font-medium">Deals</a>
+      </div>
+      <button class="md:hidden">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-pattern py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Samsung Galaxy S23 Series <span class="text-primary">Prices in Nepal</span></h1>
+        <p class="text-lg text-gray-600 mb-8">Get the latest and most accurate pricing information for all Samsung Galaxy S23 models available in Nepal.</p>
+        <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+          <button class="bg-primary hover:bg-primary-600 text-white py-3 px-6 rounded-lg font-medium transition duration-300 shadow-lg">View All Prices</button>
+          <button class="border border-primary text-primary hover:bg-primary-50 py-3 px-6 rounded-lg font-medium transition duration-300">Compare Models</button>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="http://static.photos/technology/640x360/42" alt="Samsung Galaxy S23" class="rounded-xl phone-shadow w-full max-w-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Table Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Galaxy S23 Series Price List</h2>
+      
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
+          <thead class="gradient-bg text-white">
+            <tr>
+              <th class="py-4 px-6 text-left">Model</th>
+              <th class="py-4 px-6 text-left">Storage</th>
+              <th class="py-4 px-6 text-left">Official Price</th>
+              <th class="py-4 px-6 text-left">Street Price</th>
+              <th class="py-4 px-6 text-left">Status</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr class="hover:bg-gray-50 transition duration-150">
+              <td class="py-4 px-6 font-medium">Galaxy S23 Ultra</td>
+              <td class="py-4 px-6">256GB</td>
+              <td class="py-4 px-6">Rs. 199,999</td>
+              <td class="py-4 px-6 text-primary font-medium">Rs. 185,000</td>
+              <td class="py-4 px-6">
+                <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full text-xs">Available</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition duration-150">
+              <td class="py-4 px-6 font-medium">Galaxy S23 Ultra</td>
+              <td class="py-4 px-6">512GB</td>
+              <td class="py-4 px-6">Rs. 219,999</td>
+              <td class="py-4 px-6 text-primary font-medium">Rs. 205,000</td>
+              <td class="py-4 px-6">
+                <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full text-xs">Available</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition duration-150">
+              <td class="py-4 px-6 font-medium">Galaxy S23+</td>
+              <td class="py-4 px-6">256GB</td>
+              <td class="py-4 px-6">Rs. 159,999</td>
+              <td class="py-4 px-6 text-primary font-medium">Rs. 148,000</td>
+              <td class="py-4 px-6">
+                <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full text-xs">Available</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition duration-150">
+              <td class="py-4 px-6 font-medium">Galaxy S23</td>
+              <td class="py-4 px-6">128GB</td>
+              <td class="py-4 px-6">Rs. 124,999</td>
+              <td class="py-4 px-6 text-primary font-medium">Rs. 115,000</td>
+              <td class="py-4 px-6">
+                <span class="bg-yellow-100 text-yellow-800 py-1 px-3 rounded-full text-xs">Limited Stock</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition duration-150">
+              <td class="py-4 px-6 font-medium">Galaxy S23</td>
+              <td class="py-4 px-6">256GB</td>
+              <td class="py-4 px-6">Rs. 134,999</td>
+              <td class="py-4 px-6 text-primary font-medium">Rs. 125,000</td>
+              <td class="py-4 px-6">
+                <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full text-xs">Available</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="mt-8 text-center">
+        <p class="text-gray-600 mb-4">Last updated: January 2023</p>
+        <button class="bg-primary hover:bg-primary-600 text-white py-2 px-6 rounded-lg font-medium transition duration-300 inline-flex items-center">
+          <i data-feather="refresh-cw" class="mr-2"></i> Refresh Prices
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Check Prices With Us?</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+            <i data-feather="dollar-sign" class="text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Accurate Prices</h3>
+          <p class="text-gray-600">We verify prices daily with multiple authorized retailers across Nepal to give you the most accurate information.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+            <i data-feather="alert-circle" class="text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Price Alerts</h3>
+          <p class="text-gray-600">Set alerts for your desired model and get notified when the price drops to your target range.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
+            <i data-feather="trending-up" class="text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Market Trends</h3>
+          <p class="text-gray-600">Understand price fluctuations and historical trends to make the best purchasing decision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="gradient-bg py-16 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Stay Updated on Galaxy Prices</h2>
+      <p class="max-w-2xl mx-auto mb-8">Subscribe to our newsletter and receive weekly updates on price changes, deals, and new product launches in Nepal.</p>
+      
+      <div class="max-w-md mx-auto flex">
+        <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-800">
+        <button class="bg-primary-600 hover:bg-primary-700 px-6 py-3 rounded-r-lg font-medium transition duration-300">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-bold mb-4">GalaxyTracker</h3>
+          <p class="text-gray-400">The most reliable source for Samsung Galaxy prices in Nepal.</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Latest Prices</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Comparison Tool</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Deals & Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Popular Models</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">S23 Ultra</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">S23+</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">S23</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Z Fold 4</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-center"><i data-feather="mail" class="mr-2"></i> info@galaxytracker.com</li>
+            <li class="flex items-center"><i data-feather="phone" class="mr-2"></i> +977 9801234567</li>
+            <li class="flex items-center"><i data-feather="map-pin" class="mr-2"></i> Kathmandu, Nepal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2023 GalaxyTracker. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+    
+    // Simple animation for the table rows
+    document.addEventListener('DOMContentLoaded', function() {
+      const rows = document.querySelectorAll('tbody tr');
+      rows.forEach((row, index) => {
+        row.style.opacity = '0';
+        row.style.transform = 'translateY(20px)';
+        row.style.transition = 'all 0.4s ease-out';
+        
+        setTimeout(() => {
+          row.style.opacity = '1';
+          row.style.transform = 'translateY(0)';
+        }, 100 + (index * 100));
+      });
+    });
+  </script>
+</body>
+</html>
